@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.fade-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.314);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-agendamento {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    background: var(--azulescura, #080B16);
+    width: 30%;
+    height: 70vh;
+}
+
+.submit-form-modal,
+#hour-modal,
+#data-nasc-modal,
+#name-modal {
+    width: 96.4%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: var(--branca-1, #FAFAFA);
+    border: none;
+}
+
+label[for="name-modal"],
+label[for="hour-modal"],
+label[for="data-nasc-modal"] {
+    display: block;
+    color: white;
+    margin-top: 10px;
+}
+
+.text-header {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.form {
+    margin: 20px;
+}
+
+.submit-form-modal {
+    cursor: pointer;
+    background-color: #F0B35B;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.submit-form-modal:hover {
+    background-color: #ffbe62
+}
+
+.close-modal {
+    width: 95%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    cursor: pointer;
+}

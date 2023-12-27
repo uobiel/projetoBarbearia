@@ -1,0 +1,44 @@
+.fade-modal-sucess {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.314);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-sucess {
+    border-radius: 16px;
+    background: var(--azulescura, #080B16);
+}
+
+.modal-sucess p {
+    color: white;
+    font-size: 30px;
+}
+
+.header-sucess-modal {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-modal-sucess {
+    padding: 30px;
+}
+
+.button-voltar-modal-sucess button{
+    background-color: #F0B35B;
+    width: 159px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-voltar-modal-sucess {
+    display: flex;
+    justify-content: center;
+}

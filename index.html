@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal/modalAgendamento.css">
+    <link rel="stylesheet" href="modal/modalSucesso.css">
+    <title>Seu Site</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-img">
+            <img src="img/778 branco.png" alt="ícone">
+        </div>
+
+        <div class="menus">
+            <a class="font" href="#servicos">Serviços</a>
+            <a class="font" href="#contatos">Contatos</a>
+        </div>
+
+        <div class="agenda-header">
+            <input type="button" class="button-agenda" value="Agendar horário">
+        </div>
+    </header>
+
+    <main>
+        <div class="imagem-principal">
+            <img src="img/Rectangle 6.png" alt="corte-cabelo">
+        </div>
+        
+        <div class="textos">
+            <div class="titulo espaco-titulo">
+                <p class="font">ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE</p>
+            </div>
+
+            <div class="paragrafo espaco-titulo">
+                <p class="font">Horário de funcionamento: 09:00 às 18:00</p>
+            </div>
+
+            <div class="agenda-center espaco-titulo">
+                <input type="button" class="button-agenda" id="button-agenda" value="Agendar horário">
+            </div>
+        </div>
+        
+    </main>
+
+    <section class="services" id="servicos">
+        <div class="service-header">
+            <div class="alinha-text">
+                <p class="service-titulo">Serviços</p>
+                <p>Lorem ipsum dolor sit amet consectetur. Etiam mus vitae lectus proin pellentesque mattis iaculis...</p>
+            </div>
+        </div>
+
+        <div class="images-card">
+            <div class="card1">
+                <img src="img/Rectangle 12.png" alt="">
+                <p>Corte de cabelo</p>
+            </div>
+            <div class="card2">
+                <img src="img/Rectangle 12 (1).png" alt="">
+                <p>Corte completo</p>
+            </div>
+            <div class="card3">
+                <img src="img/Rectangle 12 (2).png" alt="">
+                <p>Corte e barba</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatos">
+        <div class="container-footer">
+            <div class="sociais">
+                <div id="insta">
+                    <a target="_blank" href="https://www.instagram.com/uobiel/">
+                        <img src="img/instagram.png" alt="">
+                    </a>
+                </div>
+                <div id="face">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100008028791750">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                </div>
+                <div id="twitter">
+                    <img src="img/twitter.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-img">
+                <img class="img-logo" src="img/logo-blue 1.png" alt="">
+            </div>
+
+            <div class="social-whatsapp">
+                <a href="https://wa.me/51993180317" target="_blank">
+                    <img class="elipse" src="img/Ellipse 1.png" alt="">
+                    <img class="whats" src="img/logo-whatsapp.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Agendamento -->
+
+    <div class="fade-modal">
+
+        <div class="modal-agendamento">
+
+            <div class="close-modal">
+                <img id="close-modal" src="../img/🦆 icon _close_.svg" alt="close">
+            </div>
+            
+            <div class="modal-header">
+                <p class="text-header">Agendar horário</p>
+            </div>
+
+            <div class="formulario-modal">
+                <form class="form">
+
+                    <label for="name-modal">Nome completo</label>
+                    <input type="text" name="name-modal" id="name-modal" placeholder="Digite seu nome">
+
+                    <label for="data-nasc-modal">Selecione a data</label>
+                    <input type="date" name="data-nasc-modal" id="data-nasc-modal">
+
+                    <label for="hour-modal">Selecione o horário</label>
+                    <input type="time" name="hour-modal" id="hour-modal">
+
+                    <input class="submit-form-modal" type="button" value="Agenda horário">
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal Sucesso do Agendamento -->
+
+    <div class="fade-modal-sucess">
+
+        <modal class="modal-sucess">
+            <div class="conteudo-modal-sucess">
+                <div class="header-sucess-modal">
+                    <img src="../img/778 branco.png" alt="">
+                </div>
+                <div class="texto-modal-sucess">
+                    <p>Agendamento realizado com sucesso!</p>
+                </div>
+                <div class="button-voltar-modal-sucess">
+                    <button class="button-voltar-modal-sucess">Voltar</button>
+                </div>
+            </div>
+        </modal>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

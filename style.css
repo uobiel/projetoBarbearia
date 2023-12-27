@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #04050C;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 70px;
+    position: relative;
+    left: 20px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.agenda-header {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.button-agenda {
+    background-color: #F0B35B;
+    border: none;
+    width: 10%;
+    min-width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-agenda:hover {
+    background-color: #f0b25bdb;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative; /* Adicionei position: relative; */
+}
+
+.textos {
+    color: #FFFFFF;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.espaco-titulo {
+    margin-top: 30px;
+}
+
+.titulo {
+    font-size: 30px;
+}
+
+.paragrafo {
+    color: white;
+    font-size: 20px;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ilustr {
+    position: absolute;
+    left: 50px;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.img1 {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+
+.img2 {
+    width: 170px;
+    height: 230px;
+    position: absolute;
+    left: 150px;
+    bottom: 10px;
+}
+
+.img3 {
+    width: 200px;
+    height: 230px;
+    position: absolute;
+    left: 60px;
+    top: 15px;
+}
+
+
+.cabecalho {
+    text-align: center;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: bold;
+}
+
+
+.services {
+    width: 100%;
+    height: 500px;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 0;
+}
+
+.service-header {
+    color: black;
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+    width: 240px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.card1, .card2, .card3 {
+    margin: 20px;
+    padding-bottom: 5px;
+    border-radius: 0px 0px 16px 16px;
+    background: var(--BRANCA, #ffffff92);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.images-card {
+    display: flex;
+    justify-content: center;
+}
+
+.service-titulo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.service-header {
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alinha-text {
+    width: 70%;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.container-footer {
+    background-color: rgb(255, 255, 255);
+    height: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-logo {
+    width: 100px;
+}
+
+.sociais {
+    display: flex;
+}
+
+.sociais img {
+    image-rendering: crisp-edges;
+    border-radius: 0;
+    filter: contrast(1.2) brightness(1.1) saturate(1.3) blur(0);
+    margin: 20px;
+}
+
+.twitter {
+    position: relative;
+    right: 5px;
+    bottom: 10px;
+    width: 40px;
+}
+
+.whats {
+    position: relative;
+    right: 5px;
+    bottom: 10px;
+    width: 40px;
+}
+
+.elipse {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    width: 50px;
+}
+
+.social-whatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.social-whatsapp:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.04);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#insta:hover, #face:hover, #twitter:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+
+.card1 p, .card2 p, .card3 p {
+    font-weight: bold;
+    text-align: center;
+}
+
+header a:hover {
+    color: #f0b25bdb;
+    font-weight: bold;
+    box-shadow: 2.0px 0.1px 90px #f0b25bac;
+    background-color: #04050cf0;
+    border-radius: 300px;
+}
+
+footer a {
+    margin: 0;
+}
