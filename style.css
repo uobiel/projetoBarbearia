@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 header {
     background-color: #04050C;
     height: 80px;
@@ -271,4 +275,60 @@ header a:hover {
 
 footer a {
     margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: row;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menus {
+        width: 100%;
+    }
+
+    .header-img {
+        align-items: start;
+        justify-content: start;
+    }
+
+    .agenda-header {
+        display: none;
+    }
+
+    .textos {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .textos p {
+        font-size: 15px;
+    }
+
+    .services {
+        position: absolute;
+        top: 350px;
+    }
+
+    .images-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contatos {
+        position: absolute;
+        bottom: -1100px;
+        width: 100%;
+    }
+
+    .card1, .card2, .card3 {
+        width: 63.8%;
+    }
+
 }

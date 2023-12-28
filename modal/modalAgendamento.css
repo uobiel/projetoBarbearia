@@ -28,6 +28,7 @@
     background: var(--azulescura, #080B16);
     width: 30%;
     height: 70vh;
+    min-width: 250px;
 }
 
 .submit-form-modal,
