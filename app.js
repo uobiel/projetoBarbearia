@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');  // Importe a biblioteca cors
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,11 +9,10 @@ app.use(bodyParser.json());
 
 // Use o cors antes das rotas
 app.use(cors({
-  origin: '*',  // Isso permite solicitações de qualquer origem, ajuste conforme necessário
+  origin: '*',  // ou ajuste para a origem específica do seu aplicativo
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
-  
 
 const connection = mysql.createConnection({
   host: 'aws.connect.psdb.cloud',
