@@ -26,9 +26,10 @@
     flex-direction: column;
     border-radius: 16px;
     background: var(--azulescura, #080B16);
-    width: 30%;
+    width: 100%;
+    max-width: 500px;
     height: 70vh;
-    min-width: 250px;
+    margin: 20px;
 }
 
 .submit-form-modal,
@@ -81,3 +82,4 @@ label[for="data-nasc-modal"] {
     align-items: end;
     cursor: pointer;
 }
+
