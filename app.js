@@ -1,14 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
-const mysql = require('mysql2');
+const cors = require('cors');  // Importe a biblioteca cors
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
+
+// Use o cors antes das rotas
 app.use(cors({
-  origin: 'https://projeto-barbearia-indol.vercel.app',
+  origin: '*',  // Isso permite solicitações de qualquer origem, ajuste conforme necessário
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
