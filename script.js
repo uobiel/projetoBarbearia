@@ -94,7 +94,7 @@ function enviarDadosParaBanco() {
     var dataNasc = document.getElementById('data-nasc-modal').value;
     var hora = document.getElementById('hour-modal').value;
 
-    fetch('http://localhost:3000/salvar-no-banco', {
+    fetch('https://projeto-barbearia-indol.vercel.app/salvar-no-banco', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
