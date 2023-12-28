@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background-color: #0D121E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-login {
+    background-color: #080B16;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario-login input {
+    padding: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    outline: none;
+}
+
+input[type="button"]{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #F0B35B;
+}
+
+input[type="button"]:hover{
+    background-color: #f0b25be0;
+}
+
+.form-login label {
+    color: white;
+    margin: 10px;
+}
+
+.cabecalho-login p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}

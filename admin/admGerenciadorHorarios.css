@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho-horarios p {
+    color: white;
+    font-size: 30px;
+}
+
+.horarios {
+    background-color: #0D121E;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0B35B;
+    font-size: 24px;
+}
+
+.container-horarios {
+    background-color: #0D121E;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para a lista de horários */
+#horarios-lista {
+  max-width: 70%;
+  margin: 20px auto;
+  overflow-x: auto; /* Adicionando rolagem horizontal se necessário */
+}
+
+/* Estilizando a tabela e células */
+#horarios-lista table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px; /* Adiciona um espaçamento superior para evitar sobreposição com o cabeçalho */
+}
+
+#horarios-lista th, #horarios-lista td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#horarios-lista td.acoes {
+  text-align: center;
+}
+
+#horarios-lista td.acoes i {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Estilizando as abas (cabeçalho da tabela) */
+#horarios-lista th {
+  background-color: #F0B35B;
+  color: white;
+  cursor: pointer;
+  position: sticky; /* Adiciona posição fixa aos cabeçalhos */
+  top: 0; /* Fixa o cabeçalho no topo */
+}
+
+/* Adicionando estilo hover para as abas */
+#horarios-lista th:hover {
+  background-color: #E09E4D;
+}
+
+/* Estilo para cada linha ímpar da tabela */
+#horarios-lista tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para cada linha par da tabela */
+#horarios-lista tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+#horarios-lista tr:hover {
+  background-color: #ddd;
+}
+
+#confirmarConclusao {
+margin-right: 20px;
+}
+
+#confirmarConclusao:hover {
+background-color: #e09e4dcd;
+}
+
+#voltarConclusao:hover {
+background-color: #e09e4dcd;
+}
+
+.botaoVolta {
+background-color: #0D121E;
+cursor: pointer;
+position: absolute;
+left: 10px;
+top: 10px;
+}

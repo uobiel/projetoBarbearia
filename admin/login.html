@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../modal/modalSucesso.css">
+    <title>login</title>
+</head>
+
+<body>
+
+    <div class="form-login">
+        <div class="cabecalho-login">
+            <p>Acesso ao sistema</p>
+        </div>
+
+        <form class="formulario-login">
+            <label for="user">Digite seu usuário</label>
+            <input type="text" name="user" id="user" placeholder="Usuário">
+
+            <label for="senha">Digite sua senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+
+            <input class="button-entrar-login" type="button" value="Entrar">
+        </form>
+    </div>
+
+
+    <!-- modal erro -->
+
+    <div class="fade-modal-sucess">
+
+        <modal class="modal-sucess">
+            <div class="conteudo-modal-sucess">
+                <div class="header-sucess-modal">
+                    <img src="../img/778 branco.png" alt="">
+                </div>
+                <div class="texto-modal-sucess">
+                    <p>Usuário ou senha incorretos</p>
+                </div>
+                <div class="button-voltar-modal-sucess">
+                    <button>Voltar</button>
+                </div>
+            </div>
+        </modal>
+
+    </div>
+
+    <script>
+        var entrar = document.querySelector('.button-entrar-login');
+        var modal = document.querySelector('.fade-modal-sucess');
+        var fechaModal = document.querySelector('.button-voltar-modal-sucess');
+    
+        entrar.addEventListener('click', function(){
+            var user = document.querySelector('#user').value;
+            var senha = document.querySelector('#senha').value;
+    
+            if(user === 'admin' && senha === 'admin'){
+                window.location.href = 'admGerenciaHorarios.html';
+            } else {
+                modal.style.display = 'flex';
+                fechaModal.addEventListener('click', function(){
+                    modal.style.display = 'none';
+                });
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

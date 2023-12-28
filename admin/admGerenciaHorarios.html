@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admGerenciadorHorarios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../modal/modalSucesso.css">
+    <title>Gerenciador</title>
+</head>
+
+<body>
+
+    <div class="botaoVolta">
+        <a href="../index.html"><img src="../img/778 branco.png" alt=""></a>
+    </div>
+    
+
+    <div class="container-horarios">
+
+        <div class="cabecalho-horarios">
+            <p>Horários marcados</p>
+        </div>
+
+        <div class="horarios concluido-icon" id="horarios-lista">
+            <!-- Aqui serão exibidos os horários -->
+        </div>
+
+    </div>
+
+    <!-- Modal conclusão -->
+
+    <div class="fade-modal-sucess" id="modalExclusao">
+
+        <modal class="modal-sucess">
+            <div class="conteudo-modal-sucess">
+                <div class="header-sucess-modal">
+                    <img src="../img/778 branco.png" alt="">
+                </div>
+                <div class="texto-modal-sucess">
+                    <p>Marcar como concluído?</p>
+                </div>
+                <div class="button-voltar-modal-sucess">
+                    <button id="confirmarConclusao">Confirmar</button>
+                    <button id="voltarConclusao">Voltar</button>
+                </div>
+            </div>
+        </modal>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

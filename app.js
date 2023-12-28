@@ -8,16 +8,16 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://127.0.0.1:5500',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-  }));
+  origin: 'http://127.0.0.1:5500',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+}));
   
 
 const connection = mysql.createConnection({
   host: 'aws.connect.psdb.cloud',
-  user: '9nrwjywwlo5ezqanbw4o',
-  password: 'pscale_pw_c36VugINh7Oh7ukPCNlmMxQgXPUx04cUlDCFc1WNG98',
+  user: 'ya9osmv0j7fy0e08a0v9',
+  password: 'pscale_pw_7fkcfiFe9hJsCOLCt4bm5J49jOo5AepNzR1UExChozF',
   database: 'barbearia',
   port: 3306,
   ssl: {
@@ -47,4 +47,55 @@ app.post('/salvar-no-banco', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
+});
+
+app.get('/buscar-horarios', (req, res) => {
+  const sql = `SELECT * FROM ${tabelaNoBanco}`;
+  
+  connection.query(sql, (error, results) => {
+      if (error) {
+          console.error('Erro ao buscar horários do banco de dados:', error);
+          res.status(500).json({ error: 'Erro interno no servidor' });
+          return;
+      }
+
+      console.log('Horários obtidos com sucesso:', results);
+      res.json(results);
+  });
+});
+
+app.delete('/remover-horario/:id', (req, res) => {
+  const horarioId = req.params.id;
+
+  const sql = `DELETE FROM ${tabelaNoBanco} WHERE id = ?`;
+
+  connection.query(sql, [horarioId], (error, results) => {
+      if (error) {
+          console.error('Erro ao remover horário do banco de dados:', error);
+          res.status(500).json({ error: 'Erro interno no servidor' });
+          return;
+      }
+
+      console.log('Horário removido com sucesso:', results);
+      res.json({ success: true });
+  });
+});
+
+
+app.post('/marcar-como-concluido/:id', (req, res) => {
+  const horarioId = req.params.id;
+
+  const sqlMarcarComoConcluido = `DELETE FROM ${tabelaNoBanco} WHERE id = ?`;
+  const valuesMarcarComoConcluido = [horarioId];
+
+  connection.query(sqlMarcarComoConcluido, valuesMarcarComoConcluido, (error, results) => {
+    if (error) {
+      console.error('Erro ao marcar como concluído no banco de dados:', error);
+      res.status(500).json({ error: 'Erro interno no servidor' });
+      return;
+    }
+
+    console.log('Horário marcado como concluído com sucesso:', results);
+    res.json({ success: true });
+  });
 });
