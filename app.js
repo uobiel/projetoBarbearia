@@ -8,12 +8,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-// Configuração do CORS
+// Use o cors antes das rotas
 app.use(cors({
-  origin: '*', // Permitir todas as origens. Ajuste conforme necessário.
+  origin: '*',  // Isso permite solicitações de qualquer origem, ajuste conforme necessário
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
-  optionsSuccessStatus: 204, // É importante incluir isso para preflight requests.
 }));
 
 // Configuração do MySQL
