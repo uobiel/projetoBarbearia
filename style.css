@@ -6,10 +6,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    min-height: 100vh;
-}
-
 header {
     background-color: #04050C;
     height: 80px;
@@ -277,6 +273,7 @@ footer a {
     margin: 0;
 }
 
+
 @media screen and (max-width: 500px) {
     header {
         flex-direction: row;
@@ -323,7 +320,7 @@ footer a {
 
     #contatos {
         position: absolute;
-        bottom: -1200px;
+        bottom: -1150px;
         width: 100%;
     }
 
