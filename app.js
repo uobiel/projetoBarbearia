@@ -16,8 +16,8 @@ app.use(cors({
 
 const connection = mysql.createConnection({
   host: 'aws.connect.psdb.cloud',
-  user: '9gjtr9fdmuvtq7qfx5od',
-  password: 'pscale_pw_EYFHV71p615qepd4Deioj8P6QuyUnMm8jngSMyd9l7D',
+  user: 'qe5zstvy8h41ncylbibx',
+  password: 'pscale_pw_RuKAgooEinCIyhGmt8To7Te6v8mHYX67AFi52XhvZRK',
   database: 'barbearia',
   port: 3306,
   ssl: {
